@@ -3,45 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <nav class="nav_home">
-        <h1>Home</h1>
-        <ul class="unorder">
-            <li class="list_element"><a href="A:\mini web\admin\home.html" class="atag">Home</a></li>
-            <li class="list_element"><a href="A:\mini web\admin\Courses.html" class="atag">Students</a></li>
-            <li class="list_element"><a href="A:\mini web\admin\faculty.html" class="atag">Faculty</a></li>
-            <li class="list_element"><a href="A:\mini web\admin\atten.html" class="atag">Attendance</a></li>
-            <li class="list_element"><a href="A:\mini web\admin\mark.html" class="atag">Markreport</a></li>
-        </ul>
-    </nav>
-    <div class="heading"><h1>ABCD College</h1></div>
-    <div class="admin_title"><h1>Welcome Admin</h1></div>
-    
-
-    <div class="img">
-        <div class="img_div"><img src="A:\mini web\images\book.png" alt="course" class="img1" onclick="stud()">
-            <h3 onclick="stund()">Students</h3></div>
-        <div class="img_div"> <img src="A:\mini web\images\group.png" alt="Faculty" class="img2" onclick="facul()">
-            <h3 onclick="facul()">Faculty</h3></div>
-        <div class="img_div"><img src="A:\mini web\images\attendance.png" alt="Attendance" class="img3" onclick="attend()">
-            <h3 onclick="attend()">Attendance</h3></div>
-        <div class="img_div"><img src="A:\mini web\images\report.png" alt="Attendance" class="img3" onclick="mark()">
-            <h3 onclick="mark()">Markreport</h3></div>     
-    </div>
-    <hr>
-    <div class="img">
-        <div class="img_div"><img src="A:\mini web\images\report.png" alt="Attendance" class="img3" onclick="admin()">
-            <h3 onclick="admin()">Admin</h3></div>
-        <div class="imgdiv"><h3>Students</h3><div class="outer"><div class="inner"><div id="img3"></div></div></div></div>
-        <div class="imgdiv"><h3>Faculties</h3><div id="outer"><div id="inner"><div id="img4"></div></div></div></div>
-    </div>
-    <hr>
-    <div class="img">
-        <div class="imgdiv"><h3>Announcement</h3><input type="text" class="Announcement-div"><br><button type="submit" onclick="submission()" class="btn">Submit</button><button onclick="delanoun()" class="btn">Delete</button></div>
-    </div>
-    <script src="adminhome.js"></script>
+    <div class="heading"><h2>Student Details</h2></div>
+        <div class="tablecontainer">
+            <table  id="dataTable">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    <script src="home.js"></script>
 </body>
 </html>

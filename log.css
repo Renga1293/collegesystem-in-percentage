@@ -1,87 +1,77 @@
 body {
-  padding: 0;
-  margin: 0;
-  background-size:100%;
-  font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-size:100%;
+    font-family: sans-serif;
 }
 h1 {
-  font-family: sans-serif;
-  font-weight: lighter;
+    font-family: sans-serif;
+    font-weight: lighter;
 }
 h2{
-  font-family: sans-serif;
-  font-weight: lighter;
-  display: inline-flex;
-  
-  color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    display: inline-flex;
+    color: white;
 }
 .heading{
-  background-color: #004D74;
-  text-align: center;
+    background-color: steelblue;
+    text-align: center;
 }
 .login-container {
-  text-align: center;
-  font-family: sans-serif;
-  
+    text-align: center;
+    font-family: sans-serif;
+    
 }
 .form-signin {
-  border-color: #004D74;
-  margin-top: 10%;
-  border-style: solid;
-  border-radius: 10px;
-  display: inline-table;
-  background-color: whitesmoke;
-  border-width: 1px;
+    border-color: steelblue;
+    margin-top: 10%;
+    border-style: solid;
+    border-radius: 30px;
+    display: inline-table;
+    background-color: whitesmoke;
+    border-width: 1px;
 }
 .mail {
-  outline: 1px solid var(--secondary);
-  display: inline-block;
-  height: 30px;
-  width: 300px;
-  margin: 10px 10px 10px 10px;
-  color: var(--secondary);
-  border-color: #004D74;
-  border-radius: 5px;
-  background:none;
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    border-color: steelblue;
+    border-radius: 5px;
+    background:none;
 }
 .mail1 {
-  outline: 1px solid var(--secondary);
-  display: inline-block;
-  height: 30px;
-  width: 300px;
-  margin: 10px 10px 10px 10px;
-  color: var(--secondary);
-  border-color: #004D74;
-  border-radius: 5px;
-  background: none;
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    border-color: steelblue;
+    border-radius: 5px;
+    background: none;
 }
-
 .mail:hover{
-  border-color: #004D74;
+    border-color: steelblue;
 }
 .mail1:hover{
-  border-color: #004D74;
+    border-color: #3D737F;
 }
 .star {
-  border-style: solid;
-  border-width: 1px;
-  background-color: #004D74;
-  border-color: #006DA4;
-  color: white;
-  display: inline-block;
-  height: auto;
-  width: 180px;
-  border-radius: 10px;
-  padding: 7px;
-  margin: 20px;
-  text-decoration: none;
-  font-size: large;
+    border-style: solid;
+    border-width: 1px;
+    background-color: steelblue;
+    border-color: skyblue;
+    color: white;
+    display: inline-block;
+    height: auto;
+    width: 180px;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: large;
 }
 .star:hover {
-  background-color: #006DA4;
-  color: whitesmoke;
-  cursor: pointer;
-}
-.star:focus{
-  box-shadow: 0 0 0 3px ;
+    background-color: #3D737F;
+    color: whitesmoke;
 }

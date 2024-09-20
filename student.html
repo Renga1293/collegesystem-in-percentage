@@ -3,92 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
     <link rel="stylesheet" href="student.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="heading"><h1>Student</h1></div>
-    <center>
+    <!-- Heading -->
+    <div class="heading"><h2>Student</h2></div>
+    <h3>Announcements:</h3>
+    <!-- For admin announcement -->
+    <div class="Admin-anoun">
+        <div class="anoun-title"><h3>College Announcement</h3><div id="adminon"></div></div>
+        <div class="Faculty-div"><h3>Faculty Announcement</h3><div id="facultyanoun"></div></div>
+    </div>    
+    <hr>
+    <!-- student-detail -->
+    <h3>Your Details:</h3>
+    <div class="table-content">
         <div class="tablecontainer">
-            <table  id="dataTable" load = >
-                <thead class="head" >
-                        <tr class="title">
-                        <th class="tabhead">Student Id</th>
-                        <th class="tabhead">Name</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                        <th>Year</th>
-                        <th>Address</th>
-                        <th>Department</th>
-                        <th>Faculty</th>
-                        <th>Phone number</th>
-                        <th>Actions</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
+            <table  id="dataTable">
                 <tbody>
                 </tbody>
             </table>
         </div>
-    </center>
-
-        <div class="popup">
-            <div class="popup-content">
-                <h2 class="edith2">Add Details</h2>
-                <form id="addForm">
-                    <table>
-                        <tr>
-                            <td>StudentId</td><td><input type="number" id="editid"></td><td>StudentName:</td><td><input type="text" id="editname"></td>
-                        </tr>
-                        <tr>
-                            <td>StudentEmail</td><td><input type="email" id="editmail"></td><td>Password</td><td><input type="text" id="editpass"></td>
-                        </tr>
-                        <tr>
-                            <td>StudentAddress:</td><td><input type="text" id="editadress"></td><td>StudentDepartment</td><td><input type="text" id="editdep"></td>
-                        </tr>
-                        <tr>
-                            <td>StudentFaculty</td><td><input type="text" id="editfaculty"></td><td>Student Phonenumber:</td><td><input type="number" id="editnum"></td>
-                        </tr>
-                        <tr>
-                            <td>Year</td><td><input type="number" id="edityear"></td>
-                        </tr>
-                        <tr>
-                            <td><button id="closebut" class="btn">close</button></td><td><button type="submit" onclick="upsubmit()" class="btn">submit</button></td>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-        </div>
-    <div class="btnadd"><button id="addButton" onclick="addNew()" class="btn">Add</button></div>
-    <div id="popup">
-        <div id="popup-content">
-            <h2 class="edith2">Edit Details</h2>
-            <form id="editForm">
-                <table class="table-edit">
-                    <tr>
-                        <td>StudentId</td><td><input type="number" id="editsid" class="intput"></td><td>StudentName:</td><td><input type="text" id="editsname" class="intput"></td>
-                    </tr>
-                    <tr>
-                        <td>StudentEmail</td><td><input type="email" id="editsmail"  class="intput"></td><td>Password</td><td><input type="text" id="editspass"></td>
-                    </tr>
-                    <tr>
-                        <td>StudentAddress:</td><td><input type="text" id="editsaddress"></td><td>StudentDepartment</td><td><input type="text" id="editsdep"></td>
-                    </tr>
-                    <tr>
-                        <td>StudentFaculty</td><td><input type="text" id="editsfaculty"></td><td>Student Phonenumber:</td><td><input type="number" id="editsnum"></td>
-                    </tr>
-                    <tr>
-                        <td>Year</td><td><input type="number" id="editsyear"></td><td>Id</td><td><input type="number" name="" id="id"></td>
-                    </tr>
-                    <tr>
-                        <td><button id="closebut" class="btn">close</button></td><td><button type="submit" onclick="submission()" class="btn">submit</button></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
     </div>
-
-
+    <hr>
+    <h3>Attendance Details:</h3>
+    <div class="img">
+        <div class="imgdiv"><h3>Attendclasses</h3><div class="outer"><div class="inner"><div  id="img3""></div></div></div></div>
+        <div class="imgdiv"><h3 class="atten">Absentclasses</h3><div id="outer1"><div class="inner"><div  id="img4"></div></div></div></div>
+        <div class="imgdiv"><h3 class="absent">Ondutyclasses</h3><div  id="outer2"><div class="inner2"><div  id="img5"></div></div></div></div>
+        <div class="imgdiv"><h3 class="absent">Percentage</h3><div  id="outer3"><div class="inner3"><div id="img6"></div></div></div></div>   
+    </div>
+    <hr>
+    <h3>Marks Details:</h3>
+    <div class="img">
+        <div class="imgdiv"><h3>Previous Semster Percentage</h3><div id="outer4"><div class="inner4"><div id="img7"></div></div></div></div>
+        <div class="imgdiv"><h3>Overall Semster Percentage</h3><div id="outer5"><div class="inner5"><div id="img8"></div></div></div></div>
+    </div>
+    <div><h3 id="reph3">For Generate Report:</h3><button onclick="report()" class="btn">Click here</button></div>
+    <!-- Footer -->
+    <div class="bottom-container">
+        <h2 class="footer">Contact Us</h2>
+        <h4 id="h4">For Any Query Call:7401139175</h4>
+        <h4 id="h4">Or</h4>
+        <h4 id="h4">Mail:Bala@gmail.com</h4>
+        <h3 id="h3">Or</h3>
+        <h4 id="h4">Contact Your Faculty</h4>
+        <p>2nd Street,Kamatchi amman nagar,Medavakkam,<br>Chennai-100.</p>
+        <p>© Abcd arts and science college</p>
+      </div>
     <script src="student.js"></script>
 </body>
 </html>
