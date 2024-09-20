@@ -1,9 +1,83 @@
-function markone(){
-    window.location.href = 'A:/mini web/admin/markone.html';
+debugger
+document.addEventListener('DOMContentLoaded',function(){
+    var filter;
+    filter = document.location.search.replace(/^.*?\=/,'');
+    console.log(filter);
+    var json = {
+        "method":"fetch",
+        "filter":filter
+    }
+    fetchData(json);
+});
+function fetchData(filter){
+    fetch('http://localhost/facultystudent.php',{
+        method:'POSt',
+        headers:{
+            'Content-Type':'application/json',
+            },
+            body: JSON.stringify(filter),
+        })
+        .then(response => {
+            if(!response.ok ) {
+                throw new Error('network response was not ok!');
+            }
+            return response.text();
+        })
+        .then(data => {
+            dataLog(data);
+        })
+        .catch(error => {
+            console.log('there was a problem with the fetch operation:',error);
+    });
 }
-function marktwo(){
-    window.location.href = 'A:/mini web/admin/marktwo.html';
+function dataLog(data){
+    data = JSON.parse(data);
+    //console.log(data[0].sname);
+    const table = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+        data.forEach((row) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML=`<td>${row.studentid}</td><td>${row.sname}</td><td>${row.sdepartment}</td><td>${row.syear}</td><td><input type="radio" name="${row.studentid}" value="present"></td><td><input type="radio" name="${row.studentid}" value="absent"></td><td><input type="radio" name="${row.studentid}" value="on duty"></td>`;
+            table.appendChild(tr);
+        });
 }
-function markthree(){
-    window.location.href = 'A:/mini web/admin/markthree.html';
+function fetchPostData(filterValue){
+    fetch('http://localhost/atten.php',{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json',
+            },
+            body: JSON.stringify(filterValue),
+        })
+        .then(response => {
+            if(!response.ok ) {
+                throw new Error('network response was not ok!');
+            }
+            return response.text();
+        })
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.log('there was a problem with the fetch operation:',error);
+    });
+}
+var attendancedata = [];
+document.getElementById('dataTable').addEventListener('click',function(event){
+   if(event.target.type == "radio"){
+    var nameAttribute = event.target.name;
+    var status = event.target.value;
+    var existing = attendancedata.findIndex(function(student){
+        return student.studentid === nameAttribute;
+    });
+    if(existing !== -1){
+        attendancedata[existing].status = status;
+    }else{
+        attendancedata.push({"studentid":nameAttribute,"status":status});
+    }
+   } 
+});
+function markattendance(){
+   fetchPostData(attendancedata);
+   alert('Updated Sucessfully');
+   location.reload();
 }

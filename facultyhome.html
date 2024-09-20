@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="facultyhome.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <!-- this for heading -->
+    <div class="heading"><h1>ABCD College</h1></div>
+    <div class="admin_title"><h1>Welcome Faculty</h1></div>
+    
+    <!-- this is middle -->
+    <div class="img">
+        <div class="img_div"><img src="A:\mini web\images\book.png" alt="Students" class="img1" onclick="direct()">
+            <h3 onclick="direct()">Students</h3></div>
+        <div class="img_div"> <img src="A:\mini web\images\attendance.png" alt="Attendance" class="img2" onclick="mark()">
+            <h3 onclick="mark()">Attendance</h3></div>
+    </div>
+    <hr>
+    <div class="img">
+        <div class="imgdiv"><h3>Students</h3><div class="outer"><div class="inner"><div  id="img3""></div></div></div></div>
+        <div class="imgdiv"><h3>Announcement</h3><input type="text" class="Announcement-div"><br><button type="submit" onclick="submission()" class="btn">Submit</button><button onclick="delanoun()" class="btn">Delete</button></div>   
+    </div>
+    <hr>
+    <div class="img">
+        <div class="imgtab">
+            <div class="tablecontainer">
+                <table id="present">
+                    <thead>
+                        <tr>
+                            <th>Present</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="imgtab">
+            <div class="tablecontainer">
+                <table id="absent">
+                    <thead>
+                        <tr>
+                            <th>Present</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="imgtab">
+            <div class="tablecontainer">
+                <table id="onduty">
+                    <thead>
+                        <th>On duty</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="bottom-container">
+        <h2 class="footer">Contact Us</h2>
+        <h4 >For Any Query Call:7401139175</h4>
+        <h4>Or</h4>
+        <h4>Mail:Bala@gmail.com</h4>
+        <p>2nd Street,Kamatchi amman nagar,Medavakkam,<br>Chennai-100.</p>
+        <p>© Abcd arts and science college</p>
+      </div>
+    <script src="home.js"></script>
+</body>
+</html>

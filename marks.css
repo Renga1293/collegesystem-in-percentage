@@ -4,16 +4,15 @@ body {
     font-family: sans-serif;
 }
 .heading h1{
-    background-color: #004D74;
+    background-color: steelblue;
     display: inline-block;
 }
   .heading {
     text-align: center;
     padding: 2opx;
     font-family: sans-serif;
-    color: white;
     font-weight: lighter;
-    background-color: #004D74;
+    background-color: steelblue;
 }
 .course{
     text-align: center;
@@ -37,11 +36,28 @@ table,th,td{
     text-align: center;
     border: 1px solid;
 }
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+h2{
+    margin: 70px 10px 10px;
+}
+#dataTable{
+    margin:0 10px;
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+    /* border: 1px solid; */
+}
 .editbutton{
     font-family: sans-serif;
     border-style: solid;
     border-width: 1px;
-    background-color: #004D74;
+    background-color: steelblue;
     border-color: skyblue;
     color: white;
     display: inline-block;
@@ -54,7 +70,7 @@ table,th,td{
     font-size: large;
 }
 .editbutton:hover{
-    background-color: steelblue;
+    background-color: darkblue;
     color: cornsilk;
     cursor: pointer;
 }
@@ -78,4 +94,12 @@ table,th,td{
     background-color: steelblue;
     color: cornsilk;
     cursor: pointer;
+}
+.btnadd{
+    text-align: center;
+}
+.inputbut{
+    display: inline-flex;
+    height: 30px;
+    width: 70px;
 }
