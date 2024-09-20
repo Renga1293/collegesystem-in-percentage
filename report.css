@@ -1,0 +1,86 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;    
+}
+.heading h1{
+    background-color: #004D74;
+    display: inline-block;
+}
+.heading {
+    text-align: center;
+    color: white;
+    padding: 2opx;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-color: #004D74;
+}
+.tablecontainer{
+    width: 100%;
+    /* overflow-x: auto; */
+    text-align: center;
+}
+table{
+    margin: 200px auto;
+    width: auto;
+    max-width: 100%;
+    table-layout: fixed;
+}
+#datatable table,td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.title {
+    border: 1px solid;
+}
+.rowdata{
+    border: 1px solid;
+}
+#dataTable {
+    margin-top:70px;
+    margin-bottom: 100px;
+    display:inline-flexbox;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+    justify-content: center;
+}
+td{
+    padding: 20px 30px;
+}
+h4{
+    margin: 10px 50px 10px 50px;
+}
+.tablecontainer{
+    width: 100%;
+    /* overflow-x: auto; */
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    table-layout: fixed;
+}
+#datatable table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.title {
+    border: 1px solid;
+}
+.rowdata{
+    border: 1px solid;
+}
+#dataTable {
+    margin:100px 10px 100px 10px;
+    display:inline-flexbox;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+    justify-content: center;
+}

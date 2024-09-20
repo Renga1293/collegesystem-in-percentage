@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faculty.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav_home">
+        <h1>Faculty</h1>
+        <ul class="unorder">
+            <li class="list_element"><a href="A:\mini web\admin\home.html" class="atag">Home</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\Courses.html" class="atag">Students</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\faculty.html" class="atag">Faculty</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\atten.html" class="atag">Attendance</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\mark.html" class="atag">Markreport</a></li>
+        </ul>
+    </nav>
+
+    <div class="faculty"></div>
+
+    <table  id="dataTable">
+        <thead class="head" >
+            <tr class="title">
+                <th >Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Department</th>
+                <th>Address</th>
+                <th>Position</th>
+                <th>Phonenumber</th>
+                <th>Qualification</th>
+                <th>Year</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="popup">
+        <div class="popup-content">
+            <h2>Edit Details</h2>
+            <form id="editForm">
+                <table>
+                    <tr>
+                        <td>FacultyId</td><td><input type="number" id="editid"></td><td>facultyName:</td><td><input type="text" id="editname"></td>
+                    </tr>
+                    <tr>
+                        <td>FacultyEmail</td><td><input type="email" id="editmail"></td><td>Password</td><td><input type="text" id="editpass"></td>
+                    </tr>
+                    <tr>
+                        <td>Department:</td><td><input type="text" id="editdep"></td><td>Address</td><td><input type="text" id="editaddress"></td>
+                    </tr>
+                    <tr>
+                        <td>Position:</td><td><input type="text" id="editposition"></td><td>Phonenumber:</td><td><input type="number" id="editnum"></td>
+                    </tr>
+                    <tr>
+                        <td>Qualification:</td><td><input type="text" id="editqualify"></td><td>Year</td><td><input type="number" id="edityear"></td>
+                    </tr>
+                    <tr>
+                        <td><button id="closebut" class="btn" onclick="close()">close</button></td><td><button type="submit" class="btn" onclick="submission()">submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Edit Details</h2>
+            <form id="editForm">
+                <table>
+                    <tr>
+                        <td>FacultyId</td><td><input type="number" id="editfid"></td><td>facultyName:</td><td><input type="text" id="editfname"></td>
+                    </tr>
+                    <tr>
+                        <td>FacultyEmail</td><td><input type="email" id="editfmail"></td><td>Password</td><td><input type="text" id="editfpass"></td>
+                    </tr>
+                    <tr>
+                        <td>Department:</td><td><input type="text" id="editfdep"></td><td>Address</td><td><input type="text" id="editfaddress"></td>
+                    </tr>
+                    <tr>
+                        <td>Position:</td><td><input type="text" id="editfposition"></td><td>Phonenumber:</td><td><input type="number" id="editfnum"></td>
+                    </tr>
+                    <tr>
+                        <td>Qualification:</td><td><input type="text" id="editfqualify"></td><td>Year</td><td><input type="number" id="editfyear"></td>
+                    </tr>
+                    <tr>
+                        <td>Id</td><td><input type="number" name="" id="id"></td>
+                    </tr>
+                    <tr>
+                        <td><button id="closebut" class="btn" onclick="close()">close</button></td><td><button class="btn" type="submit" onclick="upsubmit()">submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+<div class="btnadd"><button id="addButton" class="btn" onclick="addNew()">Add</button></div>
+    <script src="faculty.js"></script>
+</body>
+</html>

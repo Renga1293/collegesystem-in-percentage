@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="attenthree.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav_home">
+        <h1>Attendance</h1>
+        <ul class="unorder">
+            <li class="list_element"><a href="A:\mini web\admin\home.html" class="atag">Home</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\Courses.html" class="atag">Students</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\faculty.html" class="atag">Faculty</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\atten.html" class="atag">Attendance</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\mark.html" class="atag">Markreport</a></li>
+        </ul>
+    </nav>
+<center>
+    <table id="dataTable">
+        <thead class="head">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Year</th>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Onduty</th>
+            </tr>
+        </thead>
+        <tbody >
+
+        </tbody>
+        
+    </table>
+    <button onclick="markattendance()" class="btn">Submit</button><div class="btnadd"><button id="addButton" onclick="report()" class="btn">Report</button></div>
+    <script src="attenthree.js"></script>
+</center>
+</body>
+</html>

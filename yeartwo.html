@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yeartwo.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav_home">
+        <h1>Students</h1>
+        <ul class="unorder">
+            <li class="list_element"><a href="A:\mini web\admin\home.html" class="atag">Home</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\Courses.html" class="atag">Students</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\faculty.html" class="atag">Faculty</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\atten.html" class="atag">Attendance</a></li>
+            <li class="list_element"><a href="A:\mini web\admin\mark.html" class="atag">Markreport</a></li>
+        </ul>
+    </nav>
+    <center>
+        <div class="tablecontainer">
+            <table  id="dataTable">
+                <thead class="head" >
+                        <tr class="title">
+                        <th class="tabhead">Student Id</th>
+                        <th class="tabhead">Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Year</th>
+                        <th>Address</th>
+                        <th>Department</th>
+                        <th>Faculty</th>
+                        <th>Phone number</th>
+                        <th>Actions</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </center>
+
+        <div class="popup">
+            <div class="popup-content">
+                <h2>Add Details</h2>
+                <form id="addForm">
+                    <table>
+                        <tr>
+                            <td>StudentId</td><td><input type="number" id="editid"></td><td>StudentName:</td><td><input type="text" id="editname"></td>
+                        </tr>
+                        <tr>
+                            <td>StudentEmail</td><td><input type="email" id="editmail"></td><td>Password</td><td><input type="text" id="editpass"></td>
+                        </tr>
+                        <tr>
+                            <td>StudentAddress:</td><td><input type="text" id="editadress"></td><td>StudentDepartment</td><td><input type="text" id="editdep"></td>
+                        </tr>
+                        <tr>
+                            <td>StudentFaculty</td><td><input type="text" id="editfaculty"></td><td>Student Phonenumber:</td><td><input type="number" id="editnum"></td>
+                        </tr>
+                        <tr>
+                            <td>Year</td><td><input type="number" id="edityear"></td>
+                        </tr>
+                        <tr>
+                            <td><button id="closebut" class="btn">close</button></td><td><button type="submit" onclick="submission()" class="btn">submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    <div class="btnadd"><button id="addButton" onclick="addNew()" class="btn">Add</button></div><div class="btnadd"><button id="addButton" onclick="report()" class="btn">Report</button></div>
+    
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Edit Details</h2>
+            <form id="editForm">
+                <table>
+                    <tr>
+                        <td>StudentId</td><td><input type="number" id="editsid"></td><td>StudentName:</td><td><input type="text" id="editsname"></td>
+                    </tr>
+                    <tr>
+                        <td>StudentEmail</td><td><input type="email" id="editsmail"></td><td>Password</td><td><input type="text" id="editspass"></td>
+                    </tr>
+                    <tr>
+                        <td>StudentAddress:</td><td><input type="text" id="editsaddress"></td><td>StudentDepartment</td><td><input type="text" id="editsdep"></td>
+                    </tr>
+                    <tr>
+                        <td>StudentFaculty</td><td><input type="text" id="editsfaculty"></td><td>Student Phonenumber:</td><td><input type="number" id="editsnum"></td>
+                    </tr>
+                    <tr>
+                        <td>Year</td><td><input type="number" id="editsyear"></td><td>Id</td><td><input type="number" name="" id="id" ></td>
+                    </tr>
+                    <tr>
+                        <td><button id="closebut" class="btn">close</button></td><td><button type="submit" onclick="upsubmit()" class="btn">submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script src="yeartwo.js"></script>
+
+</body>
+</html>

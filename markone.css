@@ -1,0 +1,104 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+.heading {
+    text-align: center;
+    margin-top: 50px;
+}
+.nav_home h1,ul,li{
+    display:inline;
+}
+.nav_home{
+    padding: 30px 7px;
+    background-color: #004D74;
+    color: white;
+}
+.unorder{
+    display: lnline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.list_element{
+    margin-left: 90px;
+    color: white;
+}
+.list_element a:hover{
+    color: lightgray;
+}
+ul{
+    margin-left: 28%;
+    /* margin-right: 10px; */
+}
+.atag{
+    color: white;
+    text-decoration: solid;
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+h2{
+    margin: 70px 10px 10px;
+}
+#dataTable{
+    margin:0 10px;
+    display: inline-flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+    /* border: 1px solid; */
+}
+.editbutton{
+    font-family: sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #004D74;
+    border-color: skyblue;
+    color: white;
+    display: inline-block;
+    height: auto;
+    width: 100px;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: large;
+}
+.editbutton:hover{
+    background-color: #004DA4;
+    color: cornsilk;
+    cursor: pointer;
+}
+.btn{
+    border-style: solid;
+    border-width: 1px;
+    background-color: #004D74;
+    border-color: skyblue;
+    color: white;
+    display: inline-block;
+    height: auto;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: large;
+}
+.btn:hover{
+    background-color: #004DA4;
+    color: cornsilk;
+    cursor: pointer;
+}
+.btnadd{
+    text-align: center;
+}
+.inputbut{
+    display: inline-flex;
+    height: 30px;
+    width: 70px;
+}
